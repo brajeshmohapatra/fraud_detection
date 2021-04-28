@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MAYA - FRAUD DETECTION</title>
+</head>
+<body>
+	<h1 style = "text-align: center">MAYA - POC Version</h1><br><br>
+	<div><form action = "{{url_for('predict')}}" method = "post">
+		<h2 style = "text-align: center"><label style = "font-size: 25px">Transaction ID</label><br><br></h2>
+		<div style = "text-align: center"><input id = "aa" type = "int" name = "aa" required><br><br></div>
+		<div style = "text-align: center"><button id = "submit" type = "submit">Check</button></div>        
+    </form></div>
+	<style>
+        body {
+        	background-color: lightslategray;
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: -15px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            color: black;
+        }
+        div {
+        	padding-top: -15px;
+            padding-bottom: 15px;
+        }        
+        #aa {
+        	width: 300px;
+  			height: 25px;
+        }
+        #submit {
+            font-size: 25px;
+            color: black;
+            padding: 15px;
+        }
+    </style>
+</body>
+</html>
